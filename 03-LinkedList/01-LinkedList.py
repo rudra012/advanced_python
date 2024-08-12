@@ -1,34 +1,34 @@
 class Node:
-    def __init__(self, datavalue=None):
-        self.datavalue = datavalue
-        self.nextvalue = None
+    def __init__(self, data=None):
+        self.data = data
+        self.next = None
 
 
 class LinkedList:
     def __init__(self):
-        self.headvalue = None
+        self.head = None
 
     def traverse(self):
-        node = self.headvalue
+        node = self.head
         while node:
             print(node.data, end="==>")
             node = node.next
 
 
-l1 = LinkedList()
-l1.headvalue = Node("Head Node")
+ll = LinkedList()
+ll.head = Node("CPP")
 node1 = Node("Python")
 node2 = Node("Java")
-l1.headvalue.nextvalue = node1
-l1.headvalue.nextvalue.nextvalue = node2
+ll.head.next = node1
+ll.head.next.next = node2
 # print(l1)
-print(l1.traverse())
+print(ll.traverse())
 
-l2 = LinkedList()
-l2.headvalue = Node("Head Node")
+ll2 = LinkedList()
+ll2.head = Node("CPP")
 node1 = Node("Python")
 node2 = Node("Java")
-l2.headvalue.nextvalue = node1
-node1.nextvalue = node2
+ll2.head.next = node1
+node1.next = node2
 # print(l2)
-print(l2.traverse())
+print(ll2.traverse())
