@@ -1,6 +1,6 @@
 import cv2
 
-image_path = "img.png"
+image_path = "IMG/img.png"
 img_grey = cv2.imread(image_path, 0)
 print(img_grey)
 print(len(img_grey))
